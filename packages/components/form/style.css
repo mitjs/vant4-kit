@@ -1,0 +1,39 @@
+.xform-hidden-label .van-field__label {
+    display: none;
+}
+
+.readonly-switch.van-switch--disabled {
+    opacity: 1;
+}
+
+.readonly-slider {}
+
+.readonly-checkbox .van-checkbox__icon .van-icon {
+    color: transparent !important;
+    border: 1px solid var(--van-checkbox-border-color);
+    background-color: transparent !important;
+}
+
+.readonly-checkbox .van-checkbox__icon.van-checkbox__icon--checked .van-icon {
+    color: var(--van-white) !important;
+    background-color: var(--van-primary-color) !important;
+    border-color: var(--van-primary-color) !important;
+}
+
+.readonly-radio .van-radio__icon .van-icon {
+    color: transparent !important;
+    border: 1px solid var(--van-checkbox-border-color);
+    background-color: transparent !important;
+}
+
+.readonly-radio .van-radio__icon.van-radio__icon--checked .van-icon {
+    color: var(--van-white) !important;
+    background-color: var(--van-primary-color) !important;
+    border-color: var(--van-primary-color) !important;
+}
+
+.readonly-stepper .van-stepper__input {
+    color: #323233 !important;
+    background: #f2f3f5 !important;
+    -webkit-text-fill-color: #323233 !important;
+}
