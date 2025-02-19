@@ -1,5 +1,0 @@
-packages:
-  - "packages/*"
-  - "docs"
-  - "play"
-  - "iframe-web"
