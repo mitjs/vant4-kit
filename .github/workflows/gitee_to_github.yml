@@ -66,7 +66,7 @@ jobs:
           echo "🌿 正在切换到 master 分支..."
           git branch -M master
           echo "✅ 分支切换完成"
-          echo "⬆️ 正在推送代码到 GitHub..."
+          echo "⬆️ 正在推送代码到 vant4-kit..."
           git push -f origin master
           echo "🎉 代码推送完成！"
           
