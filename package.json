@@ -1,0 +1,55 @@
+{
+  "name": "vant4-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "docs"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @vant4-kit/play dev",
+    "start": "run-p doc:dev moblie:dev",
+    "doc:dev": "pnpm --filter @vant4-kit/docs dev",
+    "moblie:dev": "pnpm --filter @vant4-kit/iframe-web dev",
+    "build": "pnpm --filter vant4-kit build",
+    "doc:build": "pnpm --filter @vant4-kit/docs build",
+    "preview": "pnpm --filter @vant4-kit/play preview",
+    "doc:preview": "pnpm --filter @vant4-kit/docs preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.28.0",
+    "@types/lodash-es": "4.17.12",
+    "@types/node": "20.11.20",
+    "@vant/area-data": "^2.0.0",
+    "@vitejs/plugin-vue": "5.0.4",
+    "@vitejs/plugin-vue-jsx": "3.1.0",
+    "@vue/tsconfig": "0.5.1",
+    "dayjs": "^1.11.13",
+    "move-file-cli": "3.0.0",
+    "npm-run-all": "4.1.5",
+    "release-it": "^18.1.2",
+    "rimraf": "^6.0.1",
+    "typescript": "5.2.2",
+    "vite": "5.1.4",
+    "vue-tsc": "1.8.27"
+  },
+  "dependencies": {
+    "@vant4-kit/components": "workspace:*",
+    "@vant4-kit/iframe-web": "workspace:*",
+    "@vant4-kit/play": "workspace:*",
+    "@vant4-kit/theme": "workspace:*",
+    "@vant4-kit/utils": "workspace:*",
+    "@vueuse/core": "^12.5.0",
+    "lodash-es": "4.17.21",
+    "vant": "^4.9.16",
+    "vant4-kit": "workspace:*",
+    "vue": "3.4.19"
+  }
+}
